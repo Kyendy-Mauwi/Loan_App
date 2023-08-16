@@ -6,7 +6,7 @@ import pickle
 
 # Load the trained model
 # model = joblib.load("my_model1.pkl")
-with open("my_model1.pkl", "rb") as file:
+with open("my_model1.pkl", "wb") as file:
     model = pickle.load(file)
 
 st.title("Loan Repayment Prediction App")
