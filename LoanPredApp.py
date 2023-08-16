@@ -3,9 +3,10 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import pickle 
+import joblib
 
 # Load the trained model
-# model = joblib.load("my_model1.pkl")
+model = joblib.load("my_model1.pkl")
 with open("my_model1.pkl", "rb") as f:
     model = pickle.load(f)
 
